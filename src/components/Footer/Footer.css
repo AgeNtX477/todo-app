@@ -1,0 +1,14 @@
+.footer {
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__title {
+  font-size: 19px;
+  font-weight: 500;
+  color: transparent;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  background-clip: text;
+}

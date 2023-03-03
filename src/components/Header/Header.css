@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  padding: 20px;
+}
+
+.header__title {
+  color: transparent;
+  font-size: 5vh;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  background-clip: text;
+}
+
+

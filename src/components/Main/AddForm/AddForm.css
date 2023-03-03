@@ -1,0 +1,29 @@
+.addform__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.addform__input {
+  width: 85%;
+  height: 40px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  outline: none;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.addform__submit {
+  width: 13%;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 2vh;
+  font-weight: 500;
+  cursor: pointer;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
