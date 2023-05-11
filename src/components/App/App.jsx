@@ -15,7 +15,7 @@ function App () {
       status: true
     },
     {
-      title: 'Побрить кокиш',
+      title: 'Выучить TypeScript',
       status: true
     }
   ])
