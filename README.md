@@ -1,4 +1,4 @@
-<h1 align="center">Just simple TODO <a href="https://agentx477.github.io/todo-app/" target="_blank">APP</a> 
+<h1 align="center">Just simple TODO <a href="https://agentx477.github.io/todo-app/" target="_blank">APP</a></h1>
 
 Application functionality:
 
