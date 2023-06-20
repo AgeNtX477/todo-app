@@ -33,6 +33,7 @@
   white-space: nowrap;
   overflow: hidden;
   min-width: 380px;
+  background-color: initial;
 }
 
 .card__title-done {
