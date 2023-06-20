@@ -6,3 +6,4 @@ Application functionality:
 2) Delete tasks
 3) Cross out tasks
 4) Move tasks by drag and drop
+5) Light and Dark theme toggle

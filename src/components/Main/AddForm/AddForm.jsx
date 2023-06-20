@@ -16,7 +16,7 @@ function AddForm (props) {
             props.setTodo(e.target.value)
           }}
         ></input>
-        <button onClick={props.handleAddTodo} className='addform__submit'>
+        <button onClick={props.handleAddTodo} className='button'>
           ADD
         </button>
       </div>

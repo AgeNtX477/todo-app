@@ -2,6 +2,10 @@ import './TodosCards.css'
 import del from '../../../images/delete.svg'
 import { useState } from 'react'
 
+const BACKGROUND_START =
+  'linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%)'
+const BACKGROUND_END = 'linear-gradient(to top, #fff1eb 0%, #ace0f9 100%)'
+
 function TodosCards (props) {
   const [currentCard, setCurrentCard] = useState(null)
   function handleTodoToggle (id) {
@@ -15,14 +19,12 @@ function TodosCards (props) {
   }
 
   function dragEndHandler (e) {
-   /*  e.target.style.backgroundImage =
-      'linear-gradient(to top, #fff1eb 0%, #ace0f9 100%)' */
+    e.target.style.backgroundImage = BACKGROUND_END
   }
 
   function dragOverHandler (e) {
     e.preventDefault()
-    /* e.target.style.backgroundImage =
-      'linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%)' */
+    e.target.style.backgroundImage = BACKGROUND_START
   }
 
   function dropHandler (e, card) {
@@ -38,8 +40,7 @@ function TodosCards (props) {
         return c
       })
     )
-    /* e.target.style.backgroundImage =
-      'linear-gradient(to top, #fff1eb 0%, #ace0f9 100%)' */
+    e.target.style.backgroundImage = BACKGROUND_END
   }
 
   const sortCards = (a, b) => {

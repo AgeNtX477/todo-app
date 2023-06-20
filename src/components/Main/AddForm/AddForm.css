@@ -16,7 +16,7 @@
   background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 
-.addform__submit {
+.button {
   width: 13%;
   height: 40px;
   border: none;
