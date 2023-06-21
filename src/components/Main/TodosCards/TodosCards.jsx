@@ -1,5 +1,4 @@
 import './TodosCards.css'
-import del from '../../../images/delete.svg'
 import { useState } from 'react'
 
 const BACKGROUND_START =
@@ -55,7 +54,7 @@ function TodosCards (props) {
     <section className='todoscards'>
       {props.todosCard.length > 0 ? (
         <ul className='todoscard__rendered'>
-          {props.todosCard.sort(sortCards).map((entry, id) => (
+          {props.todosCard.sort(sortCards).map((entry, id, arr) => (
             <li
               key={id}
               className='card'
@@ -72,15 +71,18 @@ function TodosCards (props) {
                 }`}
                 onClick={() => handleTodoToggle(id)}
               >
-                {[entry.title, entry.status]}
+                {[`${entry.title} (${id + 1} из ${arr.length})`, entry.status]}
               </h3>
+
               <button
-                className='card__delete'
+                className='card__del-button'
                 onClick={() => {
                   props.handleDeleteTodo(entry)
                 }}
               >
-                <img className='card__img-del' src={del} alt='dellogo'></img>
+                <svg viewBox='0 0 448 512' className='card__svgIcon'>
+                  <path d='M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z'></path>
+                </svg>
               </button>
             </li>
           ))}
